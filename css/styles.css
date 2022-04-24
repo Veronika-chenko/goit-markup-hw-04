@@ -246,12 +246,15 @@ img {
 }
 
 .features-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    margin-bottom: 30px;
+
     background-color: var(--secondary-background-color);
     width: 270px;
     height: 120px;
-    border-radius: 4px;
-    margin-bottom: 30px;
-    padding: 25px 100px;
 }
 .features-icon {
     display: block;
@@ -362,13 +365,14 @@ img {
 /* ------------------------------------------- */
 
 .team-soc-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     background-color: #ffffff;
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     fill: var(--icon-main-color);
 }
 
@@ -389,6 +393,7 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
 }
+
 .clients-list {
     display: flex;
     justify-content: center;
@@ -398,24 +403,24 @@ img {
     margin-left: 30px;
 }
 
-
-.clients-item {
-    border: 1px solid var(--icon-main-color);
-    fill: var(--icon-main-color);
-    border-radius: 4px;
-    padding: 16px 32px;
-
+.clients-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 170px;
     height: 92px;
-
+    border-radius: 4px;
+    border: 1px solid var(--icon-main-color);
+    fill: var(--icon-main-color);
     cursor: pointer;
 }
+
 .clients-icon {
     width: 106px;
     height: 60px;
 }
-.clients-item:hover,
-.clients-item:focus {
+.clients-link:hover,
+.clients-link:focus {
     border: 1px solid var(--accent-color);
     fill: var(--accent-color);
 }
